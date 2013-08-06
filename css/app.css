@@ -1,0 +1,54 @@
+#bottomNav{
+  background-color:#aaaaaa;
+  bottom:0;
+  left:0;
+  margin:0;
+  padding:1rem;
+  position:fixed;
+  width:100%;
+  z-index:1;
+}
+
+#bottomNav ul{
+  list-style:none;
+}
+
+#bottomNav li{
+  display:inline-block;
+  text-decoration:none;
+  width:25%;
+}
+
+#bottomNav a{
+  color:#ffffff;
+  font-size:2rem;
+  text-decoration:none;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+input{
+  display:block;
+}
+
+.menu ul{
+  
+}
+
+.column{
+  display: inline-block;
+  min-width:175px;
+  vertical-align:top;
+  width:50%;
+}
+
+.green{
+  color:green;
+}
+
+.red{
+  color:red;
+}
