@@ -1,3 +1,37 @@
+body{
+  background-color:#59DBD5 ;  
+  color: #ffffff;
+  font-size:2em;
+  text-align: center;
+}
+
+#pageWrap{
+
+  margin:auto;
+  width:95%;
+}
+
+.list li{
+  background-color: #082528;
+  border-radius: 5px;
+  height:60px;
+  margin: 5px 0px;
+  text-align: center;
+}
+
+input{
+  height:60px;
+  width:100%;
+}
+
+input[type="submit"]{
+  border:none;
+  background-color:#CF0A2C;
+  color:#ffffff;
+  font-size:1.5em;
+}
+
+/* ---------------------- */ 
 #bottomNav{
   background-color:#aaaaaa;
   bottom:0;
@@ -40,15 +74,38 @@ input{
 
 .column{
   display: inline-block;
+  margin: 5px;
   min-width:175px;
   vertical-align:top;
-  width:50%;
+  width:45%;
 }
 
 .green{
-  color:green;
+  color:#0c6169;
 }
 
 .red{
-  color:red;
+  color:#CF0A2C;
 }
+
+button{
+  border:none;
+  background-color:#CF0A2C;
+  height:100%;
+  border-radius: 5px;
+  float:left;
+}
+/*
+#59DBD5 // light aqua
+
+#082528 // dark navy
+
+#0c6169 // light navy
+
+#085156 // middle navy
+
+#2BBCB5 // shadow on light aqua
+
+#CF0A2C // red
+
+*/
