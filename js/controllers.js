@@ -101,3 +101,61 @@ function HomeCtrl($scope){
 function SettingsCtrl($scope){
 	$scope.settings = {};
 }
+
+function SavingsCtrl($scope){
+        $scope.cashFLow = [{
+          cash: 600,
+          month: 1,
+        },{
+          cash: 1200,
+          month: 2,
+        },{
+          cash: 1800,
+          month: 3,
+        },{
+          cash: 2400,
+          month: 4,
+        },{
+          cash: 3000,
+          month: 5,
+        },{
+          cash: 3600,
+          month: 6,
+        }];
+
+        $scope.num = 3;
+
+        $scope.displayGraph = function(){
+          alert('here we go');
+
+          var data = angular.copy($scope.cashFlow);
+          var width = 600;
+          var height = 400;
+
+          var widthScale = d3.scale.linear()
+                      .domain([0, 3600])
+                      .range([0, 600]);
+
+          var axis = d3.svg.axis()
+                      .ticks(5)
+                      .scale(widthScale);
+
+          var canvas = d3.select("#savingsArea")
+                    .append("svg")
+                    .attr("width", width)
+                    .attr("height", height);
+
+          var bars = canvas.selectAll("rect")
+                    .data(data)
+                    .enter()
+                      .append("rect")
+                      .attr("height", 30)
+                      .attr("width", function (d) { return widthScale(d.cash); })
+                      .attr("y", function (d, i) { return i * 40 })
+                      .attr("fill", "#355998");
+
+          canvas.append("g")
+              .attr("transform", "translate(0, 250)")
+              .call(axis);
+          }
+}

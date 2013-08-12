@@ -13,5 +13,6 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives'])
   config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: 'HomeCtrl'});
     $routeProvider.when('/settings', {templateUrl: 'partials/settings.html', controller: 'SettingsCtrl'});
+    $routeProvider.when('/savings', {templateUrl: 'partials/savings.html', controller: 'SavingsCtrl'});
     $routeProvider.otherwise({redirectTo: '/home'});
   }]);
