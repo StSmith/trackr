@@ -1,0 +1,14 @@
+<div>
+	<h2><span class='red' >total expenses: {{totalExpense()}}</span></h2>
+	
+	<form ng-submit='addExpenseItem()'>
+		<label><span class='red' >Name: </span></label><input id='expenseName'type='text' ng-model='newExpenseName' />
+		<label><span class='red' >Amount: </span></label><input type='number' ng-model='newExpenseAmount' />
+		<input type='submit' value='+ expense' />
+	</form>
+	<ul class='expenseList'>
+		<li ng-repeat='expenseItem in expenseItems'>
+			<button ng-click="deleteExpenseItem(expenseItem)"> X </button>{{expenseItem.name}}: ${{expenseItem.amount}}
+		</li>
+	</ul>
+</div>

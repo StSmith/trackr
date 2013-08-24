@@ -1,8 +1,6 @@
 body{
-  background-color:#59DBD5 ;  
-  color: #ffffff;
+  background-color:#aaaaaa ;  
   font-size:2em;
-  text-align: center;
 }
 
 #pageWrap{
@@ -10,27 +8,27 @@ body{
   width:95%;
 }
 
-.list li{
+.incomeList li{
   background-color: #082528;
   border-radius: 5px;
+  color:green;
   height:60px;
   margin: 5px 0px;
-  text-align: center;
 }
 
-input{
+.expenseList li{
+  background-color: #082528;
+  border-radius: 5px;
+  color:red;
   height:60px;
-  width:100%;
-}
-
-input[type="submit"]{
-  border:none;
-  background-color:#CF0A2C;
-  color:#ffffff;
-  font-size:1.5em;
+  margin: 5px 0px;
 }
 
 /* ---------------------- */ 
+
+nav li {
+  display:inline-block;
+}
 
 ul{
   list-style: none;
@@ -39,14 +37,6 @@ ul{
 
 input{
   display:block;
-}
-
-.column{
-  display: inline-block;
-  margin: 5px;
-  min-width:175px;
-  vertical-align:top;
-  width:45%;
 }
 
 .green{
@@ -58,23 +48,5 @@ input{
 }
 
 button{
-  border:none;
-  background-color:#CF0A2C;
-  height:100%;
-  border-radius: 5px;
   float:left;
 }
-/*
-#59DBD5 // light aqua
-
-#082528 // dark navy
-
-#0c6169 // light navy
-
-#085156 // middle navy
-
-#2BBCB5 // shadow on light aqua
-
-#CF0A2C // red
-
-*/

@@ -1,0 +1,20 @@
+<div>
+	<h2><span class='green'>total income: {{totalIncome()}}</span></h2>
+	
+	<form ng-submit='addIncomeItem()'>
+		<label>
+			<span class='red' >Name: </span>
+			<input type='text' ng-model='newIncomeName' />
+		</label>
+		<label>
+			<span class='red' >Amount: </span>
+			<input type='number' ng-model='newIncomeAmount' />
+		</label>
+		<input type='submit' value='+ income' />
+	</form>
+	<ul class='incomeList'>
+		<li ng-repeat='incomeItem in incomeItems'>
+			<button ng-click="deleteIncomeItem(incomeItem)"> X </button>{{incomeItem.name}}: ${{incomeItem.amount}}
+		</li>
+	</ul>
+</div>
